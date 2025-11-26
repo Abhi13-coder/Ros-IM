@@ -1,4 +1,5 @@
-The Arc Reactor subsystem, which serves as the central power and data nerve center of the ROS-IM suit. 
+The Arc Reactor subsystem, 
+which serves as the central power and data nerve center of the ROS-IM suit. 
 The Arc Reactor integrates high-performance CPU (64-bit, 16-core), modular RAM clusters (including Mega-RAM and RAM managers), a distributed battery and energy management system, and wireless communication nodes (WiFi, Bluetooth).
 System ComponentsCPU & RAM Cluster:
 64-bit/16-core processor manages overall computation and real-time decision-making.
