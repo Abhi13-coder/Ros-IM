@@ -1,25 +1,105 @@
-The Arc Reactor subsystem, 
-which serves as the central power and data nerve center of the ROS-IM suit. 
-The Arc Reactor integrates high-performance CPU (64-bit, 16-core), modular RAM clusters (including Mega-RAM and RAM managers), a distributed battery and energy management system, and wireless communication nodes (WiFi, Bluetooth).
-System ComponentsCPU & RAM Cluster:
-64-bit/16-core processor manages overall computation and real-time decision-making.
-Central RAM banks and managers communicate with distributed microcontroller nodes [Arduino, ESP32, Raspberry Pi].
-Mega-RAM (32GB) for advanced AI workloads and rapid sensor fusion.
-Battery Architecture:
-Multiple battery units ("battery ultra") supply power redundantly across all subsystems.Batteries are monitored and balanced for safety and longevity.
-Wireless Communication:
-Integrated chip transmitters for WiFi and Bluetooth enable remote control, diagnostics, and data relay.
-Microcontroller Integration:
-Node connections to ESP32, Arduino Uno, Raspberry Pi (AI, RAM) via RAM managers and ROS2 processors.
-Each microcontroller can be given dedicated storage and battery support.
-RAM managers ensure efficient memory allocation, system synchronization, and modular expansion.
-Storage & Data Management:
-Onboard storage modules for high-speed data logging and retrieval.
-ROS IntegrationROS2 Nodes:
-Each RAM manager and microcontroller subsystem operates as a dedicated ROS2 node, communicating over well-defined ROS topics and services.
-Central CPU acts as the ROS master node, coordinating distributed tasks and real-time updates.
-Diagnostics & Safety:
-Battery levels, memory usage, and communication integrity are monitored and published via ROS topics for live diagnostics and emergency fallback.
-Significance:
-The Arc Reactor module is the foundational layer of the ROS-IM suit, enabling all future modules to interface efficiently with centralized power, computation, and connectivity. 
-Its modular architecture supports robust upgrades, distributed intelligence, and advanced safety protocols essential for wearable robotics.
+# Arc Reactor Subsystem
+
+The Arc Reactor subsystem serves as the central power and data nerve center of the ROS-IM suit.
+
+---
+
+## Integration Overview
+
+- **High-performance CPU**
+  - 64-bit
+  - 16-core
+- **Modular RAM Clusters**
+  - Including Mega-RAM and RAM managers
+- **Distributed Battery & Energy Management**
+- **Wireless Communication Subsystems**
+
+---
+
+## System Components
+
+### CPU & RAM Cluster
+
+- **Processor:**  
+  64-bit / 16-core processor  
+  Manages overall computation and real-time decision-making.
+- **RAM Banks & Managers:**  
+  Communicate with distributed microcontroller nodes:
+  - Arduino
+  - ESP32
+  - Raspberry Pi
+- **Mega-RAM:**  
+  32GB for advanced AI workloads & rapid sensor fusion.
+
+---
+
+### Battery Architecture
+
+- Multiple battery units (“battery ultra”) supply power redundantly across all subsystems.
+- Batteries are monitored and balanced for safety and longevity.
+
+---
+
+### Wireless Communication
+
+- Integrated chip transmitters:
+  - WiFi
+  - Bluetooth
+- Functions:
+  - Remote control
+  - Diagnostics
+  - Data relay
+
+---
+
+### Microcontroller Integration
+
+- Node connections (via RAM managers & ROS2 processors) to:
+  - ESP32
+  - Arduino Uno
+  - Raspberry Pi (AI, RAM)
+- Each microcontroller:
+  - Dedicated storage
+  - Battery support
+- RAM managers ensure:
+  - Efficient memory allocation
+  - System synchronization
+  - Modular expansion
+
+---
+
+### Storage & Data Management
+
+- Onboard storage modules for high-speed data logging and retrieval.
+
+---
+
+## ROS Integration
+
+### ROS2 Nodes
+
+- Each RAM manager & microcontroller subsystem operates as a dedicated ROS2 node,
+- All communication over well-defined ROS topics and services.
+- Central CPU acts as ROS master node, coordinating distributed tasks & real-time updates.
+
+---
+
+## Diagnostics & Safety
+
+- Battery levels
+- Memory usage
+- Communication integrity
+- All monitored & published via ROS topics for:
+  - Live diagnostics
+  - Emergency fallback
+
+---
+
+## Significance
+
+The Arc Reactor module is the foundational layer of the ROS-IM suit, enabling all future modules to interface efficiently with centralized power, computation, and connectivity.
+
+Its modular architecture supports:
+- Robust upgrades
+- Distributed intelligence
+- Advanced safety protocols essential for wearable robotics.
